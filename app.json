@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "AoraApp",
+    "scheme": "aora",
     "slug": "AoraApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,7 +16,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.AoraApp",
+      "package": "com.jsm.aora"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +28,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
